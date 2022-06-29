@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(express.static("public"));
-
+//mongodb://localhost:27017/mobileDB   (Enter your mongodb url and database name)
 mongoose.connect("mongodb://localhost:27017/mobileDB", { useNewUrlParser: true });
 
 const mobileSchema = {
